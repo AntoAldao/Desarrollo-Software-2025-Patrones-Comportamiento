@@ -1,6 +1,8 @@
 package org.example;
 
 import org.example.plataforma.chainofresponsibility.ChainOfResponsibilityMain;
+import org.example.plataforma.command.CommandMain;
+import org.example.plataforma.iterator.IteratorMain;
 import org.example.plataforma.visitor.MainVisitor;
 
 public class Main {
@@ -9,8 +11,13 @@ public class Main {
 
         // Chain of Responsibility
         ChainOfResponsibilityMain.run();
+      
+        // Command
+        CommandMain.run();
 
-
+        // Iterator
+        IteratorMain.run();
+      
         //Visitor
         MainVisitor.main();
     }
