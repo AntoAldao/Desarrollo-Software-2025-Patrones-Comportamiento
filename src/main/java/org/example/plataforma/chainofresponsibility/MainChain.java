@@ -4,7 +4,7 @@ import org.example.template.ReporteAcademico;
 import org.example.template.ReporteAlumno;
 import org.example.template.ReporteCurso;
 
-public class Main {
+public class MainChain {
     public static void main(String[] args) {
         System.out.println("\n--- Chain of Responsibility Main ---");
 
