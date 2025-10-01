@@ -1,4 +1,4 @@
-package org.example.plataforma.chainofresponsibility;
+package org.example.template;
 
 public abstract class ReporteAcademico {
     //Templeate Metho: define el flujo del algoritmo

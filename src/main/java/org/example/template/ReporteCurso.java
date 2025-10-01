@@ -1,6 +1,8 @@
-package org.example.plataforma.chainofresponsibility;
+package org.example.template;
 
-public class ReporteCurso extends ReporteAcademico{
+import org.example.plataforma.chainofresponsibility.Solicitud;
+
+public class ReporteCurso extends ReporteAcademico {
     private String curso;
     private String desempeño;
     private Solicitud solicitud;

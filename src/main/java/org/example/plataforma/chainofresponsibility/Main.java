@@ -1,6 +1,8 @@
 package org.example.plataforma.chainofresponsibility;
 
-import java.sql.SQLOutput;
+import org.example.template.ReporteAcademico;
+import org.example.template.ReporteAlumno;
+import org.example.template.ReporteCurso;
 
 public class Main {
     public static void main(String[] args) {
