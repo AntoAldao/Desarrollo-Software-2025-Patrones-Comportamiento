@@ -1,5 +1,7 @@
 package org.example.plataforma.chainofresponsibility;
 
+import java.sql.SQLOutput;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("\n--- Chain of Responsibility Main ---");
@@ -28,6 +30,19 @@ public class Main {
         System.out.println( "Finalizada la solicitud de Luis\n");
         asistente.handle(s4);
         System.out.println( "Finalizada la solicitud de Romina\n");
+        //Metodo template
+        System.out.println("--- Metodo Template ---");
 
+        ReporteAcademico reporteAlumnoS1 = new ReporteAlumno(s1,8);
+        ReporteAcademico reporteAlumnoS2 = new ReporteAlumno(s2,8);
+        ReporteAcademico reporteAlumnoS3 = new ReporteAlumno(s3,9);
+        ReporteAcademico reporteAlumnoS4 = new ReporteAlumno(s4,7);
+        reporteAlumnoS1.generarReporte();
+        reporteAlumnoS2.generarReporte();
+        reporteAlumnoS3.generarReporte();
+        reporteAlumnoS4.generarReporte();
+
+        ReporteAcademico reporteCursoS1 = new ReporteCurso(s1,"Programacion Avanzada", "Experto");
+        reporteCursoS1.generarReporte();
     }
 }
